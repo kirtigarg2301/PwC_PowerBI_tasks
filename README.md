@@ -95,9 +95,10 @@ Diversity and Inclusion dashboard
                 total employees = CALCULATE(sheet3[female]+sheet3[male])
 
          Now I used different types of visualization tools and create the dashboard.
-
-![diversity(performnace and turnover](https://github.com/kirtigarg2301/PwC_PowerBI_tasks/assets/159450818/b32677c3-54ff-4844-a247-bbf3d247070a)
+         
 ![diversion(hiring and promotion](https://github.com/kirtigarg2301/PwC_PowerBI_tasks/assets/159450818/e2d9ab2b-b829-456e-8957-0f26f72fff8b)
+![diversity(performnace and turnover](https://github.com/kirtigarg2301/PwC_PowerBI_tasks/assets/159450818/b32677c3-54ff-4844-a247-bbf3d247070a)
+
 
 Overall I learned a lot through this internship, like how to create an attractive dashboard, define KPIs, and DAX formulas, and clearly visualize data to tell actionable insights.
 
