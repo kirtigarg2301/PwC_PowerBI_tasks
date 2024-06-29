@@ -3,19 +3,32 @@ I have done three tasks/projects of PwC Switzerland PowerBI virtual internship. 
 CALL CENTER Performance DASHBOARD:
 
 I have followed following steps:
+
         1. Data preparation:
+        
                 Received Data: I got an Excel sheet from the company with information like Call ID, Agent, Date, Time, Topic, Answered (Y/N), Resolved, Speed of                                         Answer, AvgTalkDuration, and Satisfaction Rating.
+                
                 Data Check: First, I looked at the data in Excel to understand its structure.
+                
         2.Cleaning in Power BI: Next, I imported this data into Power BI. In Power Query Editor, I did some cleaning:
-                 Handling Null Values: I replaced empty cells with 0 in some columns. This was because there were no clear patterns in those columns, and I didn’t have                                        additional insights from stakeholders to understand why the cells were empty.
+               
+                 Handling Null Values: I replaced empty cells with 0 in some columns. This was because there were no clear patterns in those columns, and I didn’t 
+                                have additional insights from stakeholders to understand why the cells were empty.
+                
                 Answered (Y/N) and Resolved: You changed "N" and "Y" to "No" and "Yes" to make it easier for people to understand.
+                
                 Column Adjustments: I renamed "AvgTalkDuration" to "Avg. Talk Duration" and adjusted it to show only the time part because it was about how long calls                                      lasted each day.
+                
                 Time Column: Similarly, I changed the format of the "Time" column to show only the time part, not the date.
+        
         Data Ready for Dashboard: After these changes, data was clean and ready to be used for creating your Power BI dashboard.
+        
         In essence, I prepared the data by making it more organized and understandable for creating visualizations in Power BI.
         
         3. Creating measures with DAX functions in Power BI  (essential for calculating KPIs and metrics)
+                   
                    Note:DAX (Data Analysis Expressions): It's a language used in Power BI (and also in Excel Power Pivot) for creating custom calculations and                                  measures. These measures are crucial for generating insights and performing calculations within your reports and dashboards.
+                
                 some calculations I did:
                         CALLS ANSWERED = COUNTX(FILTER(Sheet1,Sheet1[Answered (Y/N)]="YES"),Sheet1[Answered (Y/N)])
                         CALLS UNASWERED = COUNTX(FILTER(Sheet1,Sheet1[Answered (Y/N)]="NO"),Sheet1[Answered (Y/N)])
@@ -25,6 +38,7 @@ I have followed following steps:
                         count of satisfaction rating = count(Sheet1[Satisfaction rating])
                         positive satisfaction rating = CALCULATE(count(Sheet1[Satisfaction rating]),filter(Sheet1,Sheet1[Satisfaction rating] in {3,5}))
                         overall customer satisfaction score = DIVIDE([positive satisfaction rating],[count of satisfaction rating],0)
+       
         5. now I used different types of visualization tools and create the dashboard.
 
 ![CALL CENTER PERFORMANCE DASHBOARD](https://github.com/kirtigarg2301/PwC_PowerBI_tasks/assets/159450818/2faf8d37-ebad-4ab5-b873-f77e9495e013)
@@ -65,6 +79,7 @@ CUSTOMER CHURN ANALYSIS DASHBOARD:
 
 
 Diversity and Inclusion dashboard
+
         My task is to define relevant KPIs in hiring, promotion, performance and turnover, and create a visualization
         
         Data Preparation: I used ’03 Diversity-Inclusion-Dataset’ provided by PWC. I organized the data with the help of powerbi query editor and load it.
